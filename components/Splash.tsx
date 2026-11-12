@@ -57,12 +57,13 @@ export default function Splash() {
             initial={{ opacity: 0, y: 6 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 1.5 }}
-            className="font-mono text-xs tracking-[0.3em] uppercase text-inkFaint mt-6"
+            className="font-mono text-[10px] sm:text-xs tracking-[0.18em] uppercase text-inkFaint mt-6 px-5 text-center"
           >
-            AI Project Manager
+            AI-Native Engineer · AI Product Manager
           </motion.div>
         </motion.div>
       )}
     </AnimatePresence>
   );
 }
+

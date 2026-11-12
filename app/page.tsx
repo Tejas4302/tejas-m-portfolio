@@ -10,6 +10,7 @@ import Seasons from "@/components/Seasons";
 import Contact from "@/components/Contact";
 import { ToolsChips, BadgeGrid } from "@/components/Badges";
 import { projects, Project } from "@/data/projects";
+import { engineeringProjects } from "@/data/engineering";
 import { led, leadershipCommunity, process as capabilityCards, profileDetails } from "@/data/collections";
 
 export default function Home() {
@@ -34,7 +35,12 @@ export default function Home() {
       <Hero />
 
       <div id="projects">
-        <Rail label="Shipped AI Products" title="Enterprise AI Portfolio">
+        <Rail label="Hands-on AI Engineering" title="Applications I've Built">
+          {engineeringProjects.map((p, i) => (
+            <Card key={p.id} index={i} title={p.title} tag={p.tag} meta={p.meta} outcome={p.outcome} bg={p.bg} onClick={() => setActive(p)} />
+          ))}
+        </Rail>
+        <Rail label="AI Product & Program Leadership" title="Enterprise AI at Bosch">
           {projects.map((p, i) => (
             <Card key={p.id} index={i} title={p.title} tag={p.tag} meta={p.meta} outcome={p.outcome} bg={p.bg} onClick={() => setActive(p)} />
           ))}
@@ -50,7 +56,7 @@ export default function Home() {
       </div>
 
       <div id="capabilities">
-        <Rail label="How I Deliver" title="Core Competencies">
+        <Rail label="From Problem to Product" title="How I Build and Deliver">
           {capabilityCards.map((p, i) => (
             <Card key={p.id} index={i} title={p.title} tag={p.tag} meta={p.meta} outcome={p.outcome} bg={p.bg} onClick={() => setActive(p)} />
           ))}
@@ -83,3 +89,4 @@ export default function Home() {
     </main>
   );
 }
+

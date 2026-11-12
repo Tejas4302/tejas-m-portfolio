@@ -4,6 +4,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
@@ -41,3 +42,4 @@ a {
     scroll-behavior: auto !important;
   }
 }
+

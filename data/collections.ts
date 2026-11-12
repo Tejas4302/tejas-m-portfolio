@@ -638,6 +638,22 @@ export const profileDetails: Project[] = [
 
 export const badgeDetails: Project[] = [
   {
+    id: "badge-snowflake-finalist",
+    title: "Snowflake CoCo CLI Hackathon",
+    tag: "Hackathon Finalist",
+    meta: "Selected among the Top 9 teams",
+    outcome: "Shortlisted for the finals of the Snowflake CoCo CLI Hackathon as one of the Top 9 teams.",
+    role: "Finalist team member",
+    durationLabel: "Milestone",
+    duration: "Top 9 finalist selection",
+    stakeholdersLabel: "Event",
+    stakeholders: "Snowflake CoCo CLI Hackathon",
+    tools: ["AI Product Building", "Hackathon", "Team Collaboration"],
+    chapters: [],
+    highlight: "TOP 9",
+    bg: "from-[#123954] to-[#21190d]"
+  },
+  {
     "id": "badge-shabash",
     "title": "BGSW Shabash Excellence Award",
     "tag": "Recognition",
@@ -874,3 +890,4 @@ export const contactLinks = {
   linkedin: "https://www.linkedin.com/in/tejas-m-65b199186/",
   resumeFile: "/Tejas_M_Resume.pdf",
 };
+

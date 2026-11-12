@@ -36,7 +36,7 @@ export default function Contact() {
         <div className="font-mono text-xs tracking-[0.14em] uppercase text-accent mb-1.5">My List</div>
         <h2 className="font-display text-[clamp(40px,5.5vw,72px)] tracking-[0.035em] mb-4">Let&apos;s Build the Next One</h2>
         <p className="text-inkDim max-w-[560px] mx-auto mb-9 leading-relaxed">
-          Open to AI Project Manager roles focused on GenAI platforms, AI-assisted prototyping, and enterprise delivery from discovery through production. Resume, LinkedIn, and inbox are all one click away.
+          Open to AI-native engineering and AI product management roles. I bring hands-on application building, enterprise AI delivery, and the ability to turn business problems into working products.
         </p>
         <div className="flex flex-col xs:flex-row justify-center gap-4 max-w-md xs:max-w-none mx-auto">
           <a
@@ -49,7 +49,7 @@ export default function Contact() {
           </a>
           <a
             href={contactLinks.resumeFile}
-            download="Tejas_M_Resume.pdf"
+            download="Tejas_M_AI_Native_Engineer_Resume.pdf"
             className="px-7 py-3.5 text-sm font-extrabold tracking-wide rounded-md flex items-center justify-center gap-2.5 bg-white/[0.08] text-ink border border-line hover:bg-white/[0.14] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-all w-full xs:w-auto"
           >
             &#8595; Download Resume
@@ -74,3 +74,4 @@ export default function Contact() {
     </>
   );
 }
+

@@ -7,8 +7,8 @@ const body = Manrope({ subsets: ["latin"], variable: "--font-body" });
 const mono = Space_Mono({ weight: ["400", "700"], subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: "Tejas M - AI Project Manager | GenAI Platforms",
-  description: "AI Project Manager shipping enterprise GenAI and LLM-powered platforms from discovery and AI-assisted prototyping through security governance and production launch.",
+  title: "Tejas M | AI-Native Engineer & AI Product Manager",
+  description: "AI-native engineer and AI product manager building LLM-powered applications and leading enterprise AI delivery at Bosch. Snowflake CoCo CLI Hackathon finalist among the Top 9 teams.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -20,3 +20,4 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     </html>
   );
 }
+

@@ -27,6 +27,8 @@ export type Project = {
   stakeholdersLabel?: string;
   cover?: string;
   documents?: ProjectDocument[];
+  links?: { label: string; href: string }[];
+  highlight?: string;
 };
 
 export const projects: Project[] = [
@@ -142,3 +144,4 @@ export const projects: Project[] = [
     "bg": "from-[#241c3a] to-[#161320]"
   }
 ];
+

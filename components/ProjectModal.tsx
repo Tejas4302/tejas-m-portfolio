@@ -187,6 +187,16 @@ export default function ProjectModal({ project, onClose }: { project: Project | 
                 </div>
               )}
 
+              {project.links?.length ? (
+                <div className="flex gap-3 flex-wrap mt-7">
+                  {project.links.map((link) => (
+                    <a key={link.href} href={link.href} target="_blank" rel="noopener noreferrer" className="rounded-md border border-accentDim bg-accent/10 px-4 py-3 text-sm font-semibold text-ink hover:bg-accent/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-colors">
+                      {link.label} <span aria-hidden="true">↗</span>
+                    </a>
+                  ))}
+                </div>
+              ) : null}
+
               <div className="flex gap-2 flex-wrap mt-7 pt-6 border-t border-line">
                 {project.tools.map((t) => (
                   <div key={t} className="font-mono text-xs px-3.5 py-2 border border-line rounded-full text-inkDim bg-raised">
@@ -201,3 +211,4 @@ export default function ProjectModal({ project, onClose }: { project: Project | 
     </AnimatePresence>
   );
 }
+
